@@ -751,7 +751,7 @@ a:hover {
 
 /* Media Queries */
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .col-md-5 {
     width: 41.66667%;
   }
@@ -783,7 +783,7 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
   }
-} */
+}
 
  /*--------------------------------------------------------------
  # Support
