@@ -673,6 +673,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+/*   border: 3px solid #73AD21; */
   padding-top: 3vh;
 }
 
@@ -719,7 +720,7 @@ a:hover {
 }
 
 .newsImage-block li>.newsImage-block-inner:hover {
-  background-color: #eee;
+  background-color:#00ffd2;
 }
 
 .hp-posts-cat {
@@ -750,7 +751,7 @@ a:hover {
 
 /* Media Queries */
 
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
   .col-md-5 {
     width: 41.66667%;
   }
@@ -782,7 +783,7 @@ a:hover {
     margin-left: 0;
     margin-right: 0;
   }
-} */
+}
 
  /*--------------------------------------------------------------
  # Support
