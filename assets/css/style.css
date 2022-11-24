@@ -18,7 +18,7 @@
  }
  
  a:hover {
-   color: #d9ba85;
+   color: #00836b;
    text-decoration: none;
  }
  
@@ -142,7 +142,7 @@
  
  #topbar .contact-info i {
    font-style: normal;
-   color: #d9ba85;
+   color: #00ffd2;
  }
  
  #topbar .contact-info i span {
@@ -284,7 +284,7 @@
  .navbar .active,
  .navbar .active:focus,
  .navbar li:hover>a {
-   color: #d9ba85;
+   color: #00ffd2;
  }
  
  .navbar .dropdown ul {
@@ -673,8 +673,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-/*   border: 3px solid #73AD21; */
-  padding-top: 3vh;
+  border: 3px solid #73AD21;
 }
 
 .newsImage-block {
@@ -903,7 +902,7 @@ a:hover {
  
  #footer .footer-top .social-links a:hover {
    background: var(--color-font-secondary);
-   color: var(--color-font-primary);
+   color: #1a1814;
    text-decoration: none;
  }
  
@@ -986,7 +985,7 @@ a:hover {
  }
  
  #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-   background: #d3af71;
+   background: #00836b;
  }
  
  #footer .copyright {
