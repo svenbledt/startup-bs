@@ -383,6 +383,8 @@
    background: rgba(0, 0, 0, 0.9);
    transition: 0.3s;
    z-index: 999;
+   width: 40%;
+   margin-left: 60%;
  }
  
  .navbar-mobile .mobile-nav-toggle {
