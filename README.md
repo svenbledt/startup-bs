@@ -1,6 +1,7 @@
 [![start-up github/bootstrap5 - project winx](https://img.shields.io/badge/start--up_github%2Fbootstrap5-project_winx-2ea44f?style=for-the-badge&logo=cyberp7702.png)](https://https://github.com/svenbledt/startup-bs)
 
-# startup-bs: CYBERPUNK 77 Team-Project using bootstrap5
+## startup-bs:
+# CYBERPUNK 77 Team-Project using bootstrap5
 A Bootstrap Project of the Opportunity Class 2022/23
 -----
 ## Project
