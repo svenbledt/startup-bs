@@ -1007,7 +1007,7 @@ a:hover {
    background: none;
    font-size: 16px;
    padding: 0 20px 2px 20px;
-   background: var(--color-font-secondary);
+   background: #017460;
    color: var(--color-font-primary);
    transition: 0.3s;
    border-radius: 50px;
