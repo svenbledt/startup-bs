@@ -857,14 +857,6 @@ a:hover {
  #impressum .container {
    padding-top: 110px;
   }
-​
-
- 
- @media (max-width: 992px) {
-   #impressum .container {
-     padding-top: 98px;
-   }
- }
  
  #impressum h1 {
 
