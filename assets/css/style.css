@@ -783,8 +783,9 @@ a:hover {
 }
 
 .synth {
+  background-size: cover;
   height: 120vh;
-  width: 99vw;
+  width: 100%;
   position:absolute;
 }
 
