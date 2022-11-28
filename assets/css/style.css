@@ -1,14 +1,32 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/saira-extra-condensed-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../webfonts/saira-extra-condensed-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/saira-extra-condensed-v11-latin-regular.woff2") format("woff2"), url("../webfonts/saira-extra-condensed-v11-latin-regular.woff") format("woff"), url("../webfonts/saira-extra-condensed-v11-latin-regular.ttf") format("truetype"), url("../webfonts/saira-extra-condensed-v11-latin-regular.svg#SairaExtraCondensed") format("svg");
+  /* Legacy iOS */
+}
+/* mulish-regular - latin */
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/mulish-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../webfonts/mulish-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../webfonts/mulish-v12-latin-regular.woff2") format("woff2"), url("../webfonts/mulish-v12-latin-regular.woff") format("woff"), url("../webfonts/mulish-v12-latin-regular.ttf") format("truetype"), url("../webfonts/mulish-v12-latin-regular.svg#Mulish") format("svg");
+  /* Legacy iOS */
+}
 :root{
   --color-font-secondary: #00ffd2;
   --color-font-primary: #f8ef02;
  }
- 
+
  body {
-   font-family: "Open Sans", sans-serif;
-   background: #292929; /* #0c0b09 */
+   font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   background: #292929; /* #0c0b09 */
    color: var(--color-font-primary);
  }
  
@@ -28,7 +46,7 @@
  h4,
  h5,
  h6 {
-   font-family: "Playfair Display", serif;
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  /*--------------------------------------------------------------
@@ -200,7 +218,7 @@
    font-weight: 300;
    letter-spacing: 1px;
    text-transform: uppercase;
-   font-family: "Poppins", sans-serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  #header .logo a {
@@ -383,6 +401,8 @@
    background: rgba(0, 0, 0, 0.9);
    transition: 0.3s;
    z-index: 999;
+   width: 40%;
+   margin-left: 60%;
  }
  
  .navbar-mobile .mobile-nav-toggle {
@@ -495,7 +515,7 @@
    font-weight: 700;
    line-height: 56px;
    color: var(--color-font-primary);
-   font-family: "Poppins", sans-serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  #hero h1 span {
@@ -621,7 +641,7 @@
    letter-spacing: 2px;
    text-transform: uppercase;
    color: #aaaaaa;
-   font-family: "Poppins", sans-serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  .section-title h2::after {
@@ -638,32 +658,24 @@
    margin: 0;
    font-size: 36px;
    font-weight: 700;
-   font-family: "Playfair Display", serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    color: var(--color-font-secondary);
  }
  
  /*--------------------------------------------------------------
  # Game
  --------------------------------------------------------------*/
- .content-padding {
-   padding-top:9vh;
+ [class*="col1"] {
+       padding: 1rem;
+       background-color:#2b3c76;
+       border:solid 2px #fff;
  }
- .somesection {margin-top:50px!important;}
- body {font-size:17px;
- font-family:Helvetica Neue;}
- img{max-width:70%;}
- 
- .overlay-text {
-   font-size:3.5vw;
-   float:right;
-   width:65%; /*important*/
-   bottom:21vw; /*important*/
-   padding: 25px;
-   background:#f7f7f7;
+
+ .container1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
- .custom1 {color:blueviolet;
-   font-size: large;
- }
+
+
  
  /*--------------------------------------------------------------
 # News
@@ -673,7 +685,6 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-/*   border: 3px solid #73AD21; */
   padding-top: 3vh;
 }
 
@@ -687,13 +698,16 @@
 .newsImage-block-inner {
   -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
   -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
-  box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 1);
+  box-shadow: 0px 3px 3px 3px rgba(199, 253, 5, 0.244);
+  border: 3px solid #bc0f0f;
 }
 
 .newsImage-block li>.newsImage-block-inner {
   padding-bottom: 30px;
-  background-color: var(--color-font-primary);
+/*   background-color: var(--color-font-primary); */
+background-color: rgba(243, 213, 17, 0.534);
   height: 100%;
+/*   border: 3px solid #bc0f0f; */
 }
 
 a {
@@ -715,9 +729,9 @@ a:hover {
   overflow: hidden;
 }
 
-.newsImage-block li>.newsImage-block-inner>a img {
+/* .newsImage-block li>.newsImage-block-inner>a img {
   border: 1px solid #e1e1df;
-}
+} */
 
 .newsImage-block li>.newsImage-block-inner:hover {
   background-color:#00ffd2;
@@ -742,12 +756,12 @@ a:hover {
   padding: 0 28px;
 }
 
-.read-more {
-  display: block;
-  text-decoration: underline;
-  margin-top: 30px;
-  font-weight: 600;
+#more{
+  position: absolute;
+  bottom:10px;
+  left:50px;
 }
+
 
 /* Media Queries */
 
@@ -814,6 +828,10 @@ a:hover {
  --------------------------------------------------------------*/
  
  #impressum {
+  background-image: url('https://cdn.pixabay.com/photo/2017/11/11/03/09/chess-2938267_1280.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
    width: 100%;
    height: 100%;
    position: relative;
@@ -822,7 +840,7 @@ a:hover {
  
  #impressum:before {
    content: "";
-   background: rgba(0, 0, 0, 0.5);
+   background: #000000d4;
    position: absolute;
    bottom: 0;
    top: 0;
@@ -832,7 +850,8 @@ a:hover {
  
  #impressum .container {
    padding-top: 110px;
- }
+  }
+
  
  @media (max-width: 992px) {
    #impressum .container {
@@ -841,12 +860,13 @@ a:hover {
  }
  
  #impressum h1 {
+
    margin: 0;
    font-size: 48px;
    font-weight: 700;
    line-height: 56px;
    color: #fff;
-   font-family: "Poppins", sans-serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  #impressum h1 span {
@@ -887,14 +907,14 @@ a:hover {
    line-height: 1;
    font-weight: 300;
    text-transform: uppercase;
-   font-family: "Poppins", sans-serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }
  
  #footer .footer-top .footer-info p {
    font-size: 14px;
    line-height: 24px;
    margin-bottom: 0;
-   font-family: "Playfair Display", serif;
+   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    color: var(--color-font-primary);
  }
  
