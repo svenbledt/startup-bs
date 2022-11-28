@@ -806,12 +806,15 @@ a:hover {
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
-#company{background-color: #f8ef02;
+#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");
 }
 
-#kontakt {background-color: #f8ef02;
+#kontakt {background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg");
 }
-.accordion-item {background-color: #f8ef02;
+.accordion-item,.accordion-button{background-color: var(--color-font-primary);
+}
+.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);
+
 }
 /*
 #kontaktDaten {
