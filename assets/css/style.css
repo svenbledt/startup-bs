@@ -659,15 +659,14 @@
    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    color: var(--color-font-secondary);
  }
-
+ 
  /*--------------------------------------------------------------
  # Game
  --------------------------------------------------------------*/
- [class*="col"] {
+ [class*="col1"] {
        padding: 1rem;
-       background-color:yellow;
+       background-color:#2b3c76;
        border:solid 2px #fff;
-       color:#00ffd2;
  }
 
  .container1 {
