@@ -669,6 +669,16 @@
   height:auto;
   padding-top: 4rem;
  }
+
+ .fade-in-my-text {
+  animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
  
  /*--------------------------------------------------------------
 # News
