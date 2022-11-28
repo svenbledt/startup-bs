@@ -665,9 +665,19 @@
  /*--------------------------------------------------------------
  # Game
  --------------------------------------------------------------*/
- [class*="col1"] {
-       padding: 1rem;
+ .game1 {
+  height:auto;
+  padding-top: 4rem;
  }
+
+ .fade-in-my-text {
+  animation: fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
  
  /*--------------------------------------------------------------
@@ -806,14 +816,17 @@ a:hover {
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
-#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");
+#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");background-origin: padding-box;
 }
-
-#kontakt {background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg");
+#company2{background-color: var(--color-font-primary);
+}
+#kontakt {background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
 .accordion-item,.accordion-button{background-color: var(--color-font-primary);
 }
 .accordion-button:not(.collapsed) {background-color: var(--color-font-primary);
+}
+#Karte{background-image: url("../img/about/acjpg.jpg");background-origin: padding-box;
 
 }
 /*
