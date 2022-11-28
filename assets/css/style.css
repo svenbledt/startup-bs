@@ -667,14 +667,7 @@
  --------------------------------------------------------------*/
  [class*="col1"] {
        padding: 1rem;
-       background-color:#2b3c76;
-       border:solid 2px #fff;
  }
-
- .container1 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
-
 
  
  /*--------------------------------------------------------------
@@ -699,6 +692,7 @@
   -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
   -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
   box-shadow: 0px 3px 3px 3px rgba(199, 253, 5, 0.244);
+  border: 3px solid #bc0f0f;
 }
 
 .newsImage-block li>.newsImage-block-inner {
@@ -755,12 +749,12 @@ a:hover {
   padding: 0 28px;
 }
 
-.read-more {
-  display: block;
-  text-decoration: underline;
-  margin-top: 30px;
-  font-weight: 600;
+#more{
+  position: absolute;
+  bottom:10px;
+  left:50px;
 }
+
 
 /* Media Queries */
 
@@ -805,12 +799,15 @@ a:hover {
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
-#company{background-color: #f8ef02;
+#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");
 }
 
-#kontakt {background-color: #f8ef02;
+#kontakt {background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg");
 }
-.accordion-item {background-color: #f8ef02;
+.accordion-item,.accordion-button{background-color: var(--color-font-primary);
+}
+.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);
+
 }
 /*
 #kontaktDaten {
