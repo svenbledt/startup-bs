@@ -716,9 +716,9 @@ a:hover {
   overflow: hidden;
 }
 
-.newsImage-block li>.newsImage-block-inner>a img {
+/* .newsImage-block li>.newsImage-block-inner>a img {
   border: 1px solid #e1e1df;
-}
+} */
 
 .newsImage-block li>.newsImage-block-inner:hover {
   background-color:#00ffd2;
