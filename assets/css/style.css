@@ -799,6 +799,16 @@ a:hover {
   margin-top: 4rem!important;
   margin-bottom: 4rem!important;
  }
+
+ .form-control {
+  background-color:black;
+  color: white;
+ }
+ 
+ .form-control:focus{
+  background-color:black;
+  color: white;
+ }
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
