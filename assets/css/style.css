@@ -837,7 +837,7 @@ a:hover {
  --------------------------------------------------------------*/
 #company{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
-#company2{background-color: var(--color-font-primary);
+#textFirma{background-color: var(--color-font-primary);background-origin: padding-box;
 }
 #kontakt {background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
@@ -846,10 +846,8 @@ a:hover {
 .accordion-button:not(.collapsed) {background-color: var(--color-font-primary);background-origin: padding-box;
 }
 #büro{background-image: url("../img/about/acjpg3.jpg");background-origin: padding-box;
-
 }
 #Karte{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
-
 }
 /*
 #kontaktDaten {
