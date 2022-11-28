@@ -24,7 +24,7 @@
   --color-font-secondary: #00ffd2;
   --color-font-primary: #f8ef02;
  }
- 
+
  body {
    font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   background: #292929; /* #0c0b09 */
    color: var(--color-font-primary);
@@ -659,29 +659,22 @@
    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
    color: var(--color-font-secondary);
  }
- 
+
  /*--------------------------------------------------------------
  # Game
  --------------------------------------------------------------*/
- .content-padding {
-   padding-top:9vh;
+ [class*="col"] {
+       padding: 1rem;
+       background-color:yellow;
+       border:solid 2px #fff;
+       color:#00ffd2;
  }
- .somesection {margin-top:50px!important;}
- body {font-size:17px;
- font-family:Helvetica Neue;}
- img{max-width:70%;}
- 
- .overlay-text {
-   font-size:3.5vw;
-   float:right;
-   width:65%; /*important*/
-   bottom:21vw; /*important*/
-   padding: 25px;
-   background:#f7f7f7;
+
+ .container1 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
- .custom1 {color:blueviolet;
-   font-size: large;
- }
+
+
  
  /*--------------------------------------------------------------
 # News
