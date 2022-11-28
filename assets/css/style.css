@@ -665,15 +665,15 @@
  /*--------------------------------------------------------------
  # Game
  --------------------------------------------------------------*/
- [class*="col1"] {
+ [class*="col"] {
        padding: 1rem;
        background-color:#2b3c76;
-       border:solid 2px #fff;
+       border:solid 2px yellow;
  }
 
- .container1 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+ #my-image.img-thumbnail {
+  background-color: yellow;
+}
 
 
  
