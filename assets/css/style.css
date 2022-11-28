@@ -699,6 +699,7 @@
   -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
   -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
   box-shadow: 0px 3px 3px 3px rgba(199, 253, 5, 0.244);
+  border: 3px solid #bc0f0f;
 }
 
 .newsImage-block li>.newsImage-block-inner {
@@ -755,12 +756,12 @@ a:hover {
   padding: 0 28px;
 }
 
-.read-more {
-  display: block;
-  text-decoration: underline;
-  margin-top: 30px;
-  font-weight: 600;
+#more{
+  position: absolute;
+  bottom:10px;
+  left:50px;
 }
+
 
 /* Media Queries */
 
