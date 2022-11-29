@@ -97,7 +97,23 @@
      transform: rotate(360deg);
    }
  }
- 
+ /*--------------------------------------------------------------
+ # Scroll Bar
+ --------------------------------------------------------------*/ 
+ body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #00ffd2;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f8ef02;    /* color of the scroll thumb */
+  border-radius: 0px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
  /*--------------------------------------------------------------
  # Back to top button
  --------------------------------------------------------------*/
@@ -687,7 +703,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 25px;
   padding-top: 3vh;
 }
 
@@ -699,12 +715,9 @@
 /*   border: 3px solid #04ff08; */
 }
 
-.newsImage-block-inner {
-  -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
-  -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
-  box-shadow: 0px 5px 5px 5px rgba(199, 253, 5, 0.406);
-/*   border: 3px solid #bc0f0f; */
-}
+/* .newsImage-block-inner {
+  border: 3px solid #bc0f0f;
+} */
 
 .newsImage-block li>.newsImage-block-inner {
   padding-bottom: 10px;
@@ -766,9 +779,15 @@ a:hover {
 .mehr{
   position: relative;
   bottom:-10px;
-  left:-20px;
+  left:-15px;
 }
 
+.synth {
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  position:absolute;
+}
 
 /* Media Queries */
 
