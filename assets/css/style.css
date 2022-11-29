@@ -835,6 +835,33 @@ z-index: -1;
   margin-top: 4rem!important;
   margin-bottom: 4rem!important;
  }
+
+ .form-label {
+  color: #1a1814;
+ }
+
+ .form-control {
+  background-color:black;
+  color: white;
+ }
+ 
+ .form-control:focus{
+  background-color:black;
+  color: white;
+ }
+
+ .text1 {
+  color: #1a1814;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+ .core{
+  background-color: #f8ef02;
+}
+
+
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
