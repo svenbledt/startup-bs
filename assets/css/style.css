@@ -789,6 +789,7 @@ a:hover {
   height: 120vh;
   width: 100%;
   position:absolute;
+z-index: -1;
 }
 
 /* Media Queries */
@@ -806,11 +807,11 @@ a:hover {
   }
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .image-block li>.image-block-inner>a {
     max-height: 245px;
   }
-} */
+}
 
 @media (min-width: 992px) {
 
@@ -872,7 +873,7 @@ a:hover {
  
  #impressum:before {
    content: "";
-   background: #000000d4;
+/*   */
    position: absolute;
    bottom: 0;
    top: 0;
