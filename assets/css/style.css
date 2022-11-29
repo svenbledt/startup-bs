@@ -414,7 +414,6 @@ body::-webkit-scrollbar-thumb {
    right: 0;
    left: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.9);
    transition: 0.3s;
    z-index: 999;
    width: 40%;
@@ -695,6 +694,9 @@ body::-webkit-scrollbar-thumb {
   100% { opacity: 1; }
 }
 
+.my-new-container {
+}
+
  
  /*--------------------------------------------------------------
 # News
@@ -728,7 +730,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-  color: #111;
+  color: #37332a;
   text-decoration: none;
 }
 
@@ -787,6 +789,7 @@ a:hover {
   height: 120vh;
   width: 100%;
   position:absolute;
+z-index: -1;
 }
 
 /* Media Queries */
@@ -832,6 +835,33 @@ a:hover {
   margin-top: 4rem!important;
   margin-bottom: 4rem!important;
  }
+
+ .form-label {
+  color: #1a1814;
+ }
+
+ .form-control {
+  background-color:black;
+  color: white;
+ }
+ 
+ .form-control:focus{
+  background-color:black;
+  color: white;
+ }
+
+ .text1 {
+  color: #1a1814;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+ .core{
+  background-color: #f8ef02;
+}
+
+
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
@@ -870,7 +900,7 @@ a:hover {
  
  #impressum:before {
    content: "";
-   background: #000000d4;
+/*   */
    position: absolute;
    bottom: 0;
    top: 0;
