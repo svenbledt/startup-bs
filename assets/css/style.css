@@ -792,6 +792,9 @@ a:hover {
 z-index: -1;
 }
 
+.warning{
+  margin-top:80px;
+}
 /* Media Queries */
 
 @media (min-width: 992px) {
