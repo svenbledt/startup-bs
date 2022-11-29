@@ -97,7 +97,23 @@
      transform: rotate(360deg);
    }
  }
- 
+ /*--------------------------------------------------------------
+ # Scroll Bar
+ --------------------------------------------------------------*/ 
+ body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #00ffd2;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f8ef02;    /* color of the scroll thumb */
+  border-radius: 0px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
  /*--------------------------------------------------------------
  # Back to top button
  --------------------------------------------------------------*/
@@ -398,7 +414,6 @@
    right: 0;
    left: 0;
    bottom: 0;
-   background: rgba(0, 0, 0, 0.9);
    transition: 0.3s;
    z-index: 999;
    width: 40%;
@@ -679,6 +694,9 @@
   100% { opacity: 1; }
 }
 
+.my-new-container {
+}
+
  
  /*--------------------------------------------------------------
 # News
@@ -687,7 +705,7 @@
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 25px;
   padding-top: 3vh;
 }
 
@@ -696,25 +714,23 @@
   margin-left:10;
   display: flex;
   flex-wrap: wrap;
+/*   border: 3px solid #04ff08; */
 }
 
-.newsImage-block-inner {
-  -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
-  -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
-  box-shadow: 0px 3px 3px 3px rgba(199, 253, 5, 0.244);
+/* .newsImage-block-inner {
   border: 3px solid #bc0f0f;
-}
+} */
 
 .newsImage-block li>.newsImage-block-inner {
-  padding-bottom: 30px;
-/*   background-color: var(--color-font-primary); */
-background-color: rgba(243, 213, 17, 0.534);
+  padding-bottom: 10px;
+  background-color: var(--color-font-primary);
+/*   background-color: rgba(243, 213, 17, 0.534); */
   height: 100%;
 /*   border: 3px solid #bc0f0f; */
 }
 
 a {
-  color: #111;
+  color: #37332a;
   text-decoration: none;
 }
 
@@ -759,12 +775,21 @@ a:hover {
   padding: 0 28px;
 }
 
-#more{
-  position: absolute;
-  bottom:10px;
-  left:50px;
+.news-text{
+  min-height: 100px;
+}
+.mehr{
+  position: relative;
+  bottom:-10px;
+  left:-15px;
 }
 
+.synth {
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  position:absolute;
+}
 
 /* Media Queries */
 
@@ -781,11 +806,11 @@ a:hover {
   }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .image-block li>.image-block-inner>a {
     max-height: 245px;
   }
-}
+} */
 
 @media (min-width: 992px) {
 
@@ -839,18 +864,19 @@ a:hover {
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
-#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");background-origin: padding-box;
+#company{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
-#company2{background-color: var(--color-font-primary);
+#textFirma{background-color: var(--color-font-primary);background-origin: padding-box;
 }
 #kontakt {background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
-.accordion-item,.accordion-button{background-color: var(--color-font-primary);
+.accordion-item,.accordion-button{background-color: var(--color-font-primary);background-origin: padding-box;
 }
-.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);
+.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);background-origin: padding-box;
 }
-#Karte{background-image: url("../img/about/acjpg.jpg");background-origin: padding-box;
-
+#büro{background-image: url("../img/about/acjpg3.jpg");background-origin: padding-box;
+}
+#Karte{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
 /*
 #kontaktDaten {
@@ -884,14 +910,6 @@ a:hover {
  #impressum .container {
    padding-top: 110px;
   }
-​
-
- 
- @media (max-width: 992px) {
-   #impressum .container {
-     padding-top: 98px;
-   }
- }
  
  #impressum h1 {
 
