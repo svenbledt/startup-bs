@@ -728,7 +728,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 a {
-  color: #111;
+  color: #37332a;
   text-decoration: none;
 }
 
@@ -804,11 +804,11 @@ a:hover {
   }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .image-block li>.image-block-inner>a {
     max-height: 245px;
   }
-}
+} */
 
 @media (min-width: 992px) {
 
