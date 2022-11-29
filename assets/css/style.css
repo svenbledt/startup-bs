@@ -835,18 +835,19 @@ a:hover {
  /*--------------------------------------------------------------
  # About
  --------------------------------------------------------------*/
-#company{background-image: url("../img/about/futuristic-abstract-cyberpunk-backgrounds-suitable-presentation-etc_519833-6.jpg ");background-origin: padding-box;
+#company{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
-#company2{background-color: var(--color-font-primary);
+#textFirma{background-color: var(--color-font-primary);background-origin: padding-box;
 }
 #kontakt {background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
-.accordion-item,.accordion-button{background-color: var(--color-font-primary);
+.accordion-item,.accordion-button{background-color: var(--color-font-primary);background-origin: padding-box;
 }
-.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);
+.accordion-button:not(.collapsed) {background-color: var(--color-font-primary);background-origin: padding-box;
 }
-#Karte{background-image: url("../img/about/acjpg.jpg");background-origin: padding-box;
-
+#büro{background-image: url("../img/about/acjpg3.jpg");background-origin: padding-box;
+}
+#Karte{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
 /*
 #kontaktDaten {
