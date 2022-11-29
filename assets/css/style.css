@@ -875,6 +875,7 @@ z-index: -1;
 }
 #Karte{background-image: url("../img/about/acjpg2.jpg");background-origin: padding-box;
 }
+.Helden{ min-height: 100px; min-width:100px;}
 /*
 #kontaktDaten {
 }
