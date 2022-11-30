@@ -927,6 +927,10 @@ a:hover {
   min-height: 100px;
   min-width: 100px;
 }
+.Map {min-width:100%;
+height: auto;
+min-width:100px;
+}
 /*
 #kontaktDaten {
 }
