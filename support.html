@@ -292,16 +292,17 @@
       var request = new XMLHttpRequest();
       var uname = document.getElementById("name").value;
       var mail = document.getElementById("emailAddress").value;
-      var msg = document.getElementById("message").value;
-
+      var str = document.getElementById("message").value;
+      var msg = str.replace(/<br>/g, "\n");
       request.open("POST", "https://canary.discord.com/api/webhooks/1044930922111311902/8JdZKF6m0RSePmRNUT-vRtim14k6X5rEywbAyu0GZq_ta_4pH67uQOFp5_PKwwjqdnme");
 
       request.setRequestHeader('Content-type', 'application/json');
 
       var params = {
         username: "Support",
-        embeds:[{"color": 16711680,"title":"Benutzer: " + uname, "description":"Schreibt: " + msg + " Email: " + mail, "timestamp": new Date()}],
+        embeds:[{"color": 16711680,"title":"Benutzer: " + uname, "description":"Schreibt: " + msg + "\nEmail: " + mail, "timestamp": new Date()}],
       }
+      console.log(JSON.stringify(params))
       request.send(JSON.stringify(params));
     }
   </script>
