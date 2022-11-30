@@ -171,26 +171,26 @@
             <div class="container py-4">
 
               <!--Formular -->
-              <form id="contactForm">
+              <form onsubmit="return sendMessage();" id="contactForm">
 
                 <h2 style="color:#1a1814;">Kontaktiere Uns:</h2>
 
                 <!-- Name input -->
                 <div class="mb-3">
                   <label class="form-label" for="name">Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" />
+                  <input class="form-control" id="name" value="" type="text" placeholder="Name" />
                 </div>
 
                 <!-- Email address input -->
                 <div class="mb-3">
                   <label class="form-label" for="emailAddress">E-Mail Addresse</label>
-                  <input class="form-control" id="emailAddress" type="email" placeholder="E-Mail Addresse" />
+                  <input class="form-control" id="emailAddress" value="" type="email" placeholder="E-Mail Addresse" />
                 </div>
 
                 <!-- Message input -->
                 <div class="mb-3">
                   <label class="form-label" for="message">Nachricht</label>
-                  <textarea class="form-control" id="message" type="text" placeholder="Nachricht"
+                  <textarea class="form-control" id="message" value="" type="text" placeholder="Nachricht"
                     style="height: 10rem;"></textarea>
                 </div>
 
@@ -278,7 +278,6 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -288,7 +287,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function sendMessage() {
+      var request = new XMLHttpRequest();
+      var uname = document.getElementById("name").value;
+      var mail = document.getElementById("emailAddress").value;
+      var msg = document.getElementById("message").value;
 
+      request.open("POST", "https://canary.discord.com/api/webhooks/1044930922111311902/8JdZKF6m0RSePmRNUT-vRtim14k6X5rEywbAyu0GZq_ta_4pH67uQOFp5_PKwwjqdnme");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "Support",
+        embeds:[{"color": 16711680,"title":"Benutzer: " + uname, "description":"Schreibt: " + msg + " Email: " + mail, "timestamp": new Date()}],
+      }
+      request.send(JSON.stringify(params));
+    }
+  </script>
 </body>
 
 </html>
