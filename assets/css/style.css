@@ -930,6 +930,7 @@ a:hover {
 .Map {min-width:100%;
 height: auto;
 min-width:100px;
+border-top-left-radius: 20%;
 }
 /*
 #kontaktDaten {
